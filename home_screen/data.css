@@ -1,0 +1,143 @@
+::root {
+  --primary-red: #601212;
+  --bg-gray: #e5dfd3;
+  --text-gray: #666;
+  --card-pink: #dac8c8;
+}
+.body {
+  background-color: #e5dfd3;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+}
+
+.intro h2 {
+  color: #601212;
+  font-family: "inter", sans-serif;
+  font-size: 25px;
+}
+.intro h4 {
+  color: #666;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  transform: translate(-30px);
+}
+.section-label {
+  color: #601212;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border: 1px solid red;
+}
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.full-width {
+  width: 110%;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 80%;
+  padding: 10px 5px;
+  border-radius: 10px;
+  font-size: 16px;
+  border-left: 1px solid #601212;
+  border-right: 1px solid #601212;
+  border-top: 1px solid #601212;
+  border-bottom: 1px solid #601212;
+  margin-left: 10px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+  outline: none;
+}
+
+.flex-1 {
+  flex: 1;
+}
+.flex-2 {
+  flex: 2;
+}
+.flex-3 {
+  flex: 3;
+}
+
+.input::placeholder {
+  color: #666;
+  font-size: 15px;
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+
+.select {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  outline: none;
+  border: 1px solid red;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+}
+
+/* Address Card Styles */
+.address-card {
+  background-color: #dac8c8;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+
+  margin-bottom: 25px;
+}
+
+.card-label {
+  color: #601212;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* Button Styles */
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-save {
+  background-color: #601212;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.btn-cancel {
+  background-color: #fff;
+  color: #601212;
+  border: 1px solid #601212;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

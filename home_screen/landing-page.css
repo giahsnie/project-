@@ -1,0 +1,303 @@
+/*header*/
+.landing-header {
+  background-color: #ffffff;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Pinaghihiwalay ang logo at button */
+  align-items: center;
+  max-width: 1200px; /* Standard width para sa desktop */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.description-text {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  color: #1a2a36;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+/* Logo Styling */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-icon {
+  background-color: #1a2a36; /* Dark color base sa image */
+  color: white;
+  width: 35px;
+  height: 45px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.logo-text {
+  font-family: "Inter", sans-serif; /* O sans-serif */
+  font-weight: 800;
+  font-size: 20px;
+  color: #1a2a36;
+  letter-spacing: -0.5px;
+}
+
+/* Sign Up Button Styling */
+.signup-btn {
+  background-color: #1a2a36; /* Dark color base sa image */
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 30px; /* Pill shape gaya ng nasa image */
+  font-family: sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+}
+
+.signup-btn:hover {
+  opacity: 0.9;
+}
+/*discription*/
+.description {
+  background-color: #dbdbdb;
+  padding: 15px 0;
+  border-bottom: 1px solid #c9c6c6;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #20d1e9;
+  font-family: "Inter", sans-serif;
+}
+
+.description-container {
+  display: flex;
+  justify-content: space-between; /* Pinaghihiwalay ang logo at button */
+  align-items: center;
+  max-width: 1200px; /* Standard width para sa desktop */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100x; /* Standard width para sa desktop */
+  padding: 0 20px;
+}
+.get-started-btn {
+  display: flex;
+  background-color: #1a2a36; /* Dark color base sa image */
+  color: white;
+  text-decoration: none;
+  padding: 10px 25px;
+  font-family: "Inter", sans-serif;
+  font-style: bold;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+  margin: 20px;
+  height: 50px;
+  width: 600px;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+:root {
+  --bg-dark: #1a2b3c;
+  --text-muted: #64748b;
+  --accent-cyan: #00bcd4;
+  --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  color: #0f172a;
+  line-height: 1.6;
+}
+
+/* Social Proof */
+.social-proof {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.trust-heading {
+  color: #94a3b8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.logo-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+/* Features */
+.category-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.features {
+  background-color: #f8fafc;
+  padding: 80px 20px;
+}
+
+.features-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.features-header h2 {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+/*Cards-container*/
+
+.cards-container {
+  padding: 60px 20px;
+  text-align: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+  gap: 50px;
+  transition: all 0.3s ease;
+  grid-area: menu;
+  justify-content: space-between;
+}
+
+.card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Testimonial */
+.testimonial {
+  background-color: var(--bg-dark); /* Dark color base sa image */
+  color: #fff;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.stars {
+  color: var(--accent-cyan);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+blockquote {
+  font-size: 22px;
+  font-weight: 300;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  line-height: 1.4;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--accent-cyan);
+  margin: 0 auto 15px;
+  background: #ccc;
+}
+
+.fa-user {
+  font-size: 40px;
+  justify-content: center; /* Center the icon horizontally */
+  transform: translateY(10px);
+}
+
+.author p {
+  color: var(--accent-cyan);
+  font-size: 14px;
+  margin-top: 5px;
+}
+/* Footer Button */
+.btn-cta {
+  background-color: #00bcd4;
+  border-radius: 20px;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  width: 200%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.btn-cta:hover {
+  background: #965656;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000000;
+  font-weight: 600;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.footer {
+  padding: 20px 20px;
+  text-align: center;
+  background-color: #f8fafc;
+}

@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Sign-Up</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+      }
+
+      body {
+        margin: 0;
+        background: #e5dfd3;
+        display: flex;
+        justify-content: center;
+      }
+
+      .screen {
+        width: 100%;
+        max-width: 420px;
+        padding: 28px 22px 40px;
+      }
+
+      h1 {
+        font-size: 34px;
+        font-weight: 700;
+        margin: 0 0 8px;
+        color: #000000;
+      }
+
+      .subtitle {
+        color: #9d4242;
+        font-size: 16px;
+        margin-top: -10px;
+      }
+
+      .input-wrapper {
+        position: relative;
+        margin-bottom: 20px;
+      }
+
+      .input-wrapper label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      .input-wrapper input {
+        width: 100%;
+        padding: 16px 48px;
+        font-size: 16px;
+        border-radius: 16px;
+        border: 1.5px solid #9c4242;
+        outline: none;
+      }
+
+      .input-wrapper i.left {
+        position: absolute;
+        left: 15px;
+        top: 58%;
+        transform: translateY(-20%);
+        color: #dac8c8;
+        font-size: 18px;
+      }
+
+      .input-wrapper i.right {
+        position: absolute;
+        right: 15px;
+        top: 58%;
+        transform: translateY(-20%);
+        color: #9c4242;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      button {
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+        border-radius: 16px;
+        border: none;
+        background-color: #720316;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      button:hover {
+        background-color: #b85656;
+      }
+
+      .footer {
+        margin-top: 32px;
+        text-align: center;
+        font-size: 16px;
+      }
+
+      .footer a {
+        color: #9c4242;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="screen">
+      <h1>Sign Up</h1>
+      <p class="subtitle">Create an account to get started!</p>
+
+      <form action="/signup" method="POST">
+        <div class="input-wrapper">
+          <label for="fName">Full Name</label>
+          <i class="fas fa-user left"></i>
+          <i class="fas fa-check right"></i>
+          <input
+            type="text"
+            placeholder="Sam Smith"
+            id="fName"
+            name="fName"
+            required
+          />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="email">Email Address</label>
+          <i class="fas fa-envelope left"></i>
+          <i class="fas fa-check right"></i>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="sam@example.com"
+            required
+          />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="password">Password</label>
+          <i class="fas fa-lock left"></i>
+          <i class="fas fa-check right"></i>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="confirm_password">Confirm Password</label>
+          <i class="fas fa-lock left"></i>
+          <i class="fas fa-check right"></i>
+          <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+            placeholder="Confirm password"
+            required
+          />
+        </div>
+
+        <button type="submit">CREATE ACCOUNT</button>
+      </form>
+
+      <div class="footer">
+        Already have an account?
+        <a href="../auth/log-in.html">Sign-In here</a>
+      </div>
+    </div>
+  </body>
+</html>

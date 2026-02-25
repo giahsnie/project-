@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News & Updates</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="news.css" />
+  </head>
+  <style>
+        .p{
+          text-align: center;
+           color: #888;
+           margin-top: 50px"
+        }
+        .navbar {
+      display: flex;
+      justify-content: space-around;
+      background-color: #ffffff;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      max-width: 500px;
+      box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-item {
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+      display: flex;
+      flex-direction: column; /* Stack icon on top of text */
+      align-items: center;
+      gap: 5px; /* Space between icon and text */
+      font-family: sans-serif;
+      font-size: 14px;
+      position: relative;
+    }
+
+    .nav-item i {
+      font-size: 20px; /* Makes the icon slightly larger */
+    }
+
+    .nav-item:hover,
+    .active {
+      color: #9d4242; /* Highlight color */
+    }
+  </style>
+  <body>
+    <header class="app-header">
+      <h2>Latest News</h2>
+    </header>
+
+    <div class="container">
+      <p class="p">No news updates at the moment.</p>
+    </div>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <a href="service.html" class="nav-item">
+        <i class="fas fa-concierge-bell"></i> Service
+      </a>
+      <a href="news.html" class="nav-item active">
+        <i class="fas fa-newspaper"></i> News
+      </a>
+      <a href="../home_screen/homescreen.html" class="nav-item">
+        <i class="fas fa-home"></i> Home
+      </a>
+      <a href="emergency.html" class="nav-item">
+        <i class="fas fa-ambulance"></i> Emergency
+      </a>
+      <a href="account.html" class="nav-item">
+        <i class="fas fa-user-circle"></i> Account
+      </a>
+    </nav>
+  </body>
+</html>
