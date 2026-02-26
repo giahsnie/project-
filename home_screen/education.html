@@ -3,35 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academic Record</title>
     <link rel="stylesheet" href="education.css" />
-    <title>Education</title>
   </head>
   <body>
-    <div class="form-card">
-      <h2>Education</h2>
+    <div class="container">
+      <header>
+        <h1>ACADEMIC RECORD</h1>
+      </header>
+
+      <section class="intro">
+        <h2>Education & Skills</h2>
+        <p>
+          Provide your educational background and professional certifications.
+        </p>
+      </section>
 
       <form>
-        <div class="form-group">
-          <label for="elementary">Elementary</label>
-          <input type="text" id="elem" name="elementary" />
+        <div class="section-label">EDUCATIONAL HISTORY</div>
+
+        <div class="edu-block">
+          <div class="level-header">
+            <span class="icon">🎓</span> TERTIARY LEVEL
+          </div>
+
+        
+          <div class="form-item full-width">
+            <label>NAME OF INSTITUTION</label>
+            <input type="text" placeholder="University/College Name" />
+          </div>
+          <div class="input-row">
+            <div class="form-field flex-3">
+              <label>DEGREE/COURSE</label>
+              <select name="degree" id="degree" />
+                <option value="select">Select</option>
+                <option value="bsc">BSIT</option>
+                <option value="msc">BSCPE</option>
+                <option value="phd">BSA</option>
+              </select>
+            </div>
+
+            <div class="field-group flex-1">
+              <label>GRADUATION YEAR</label>
+              <input type="text" placeholder="YYYY" />
+            </div>
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="secondary">Secondary</label>
-          <input type="text" id="sec" name="secondary" />
+        <div class="edu-block">
+          <div class="level-header">
+            <span class="icon">🏫</span> SECONDARY LEVEL
+          </div>
+          <div class="row">
+            <div class="form-group flex-2">
+              <label>NAME OF INSTITUTION</label>
+              <input type="text" placeholder="High School Name" />
+            </div>
+            <div class="field-row flex-1">
+              <label>YEAR ENDED</label>
+              <input type="text" placeholder="YYYY" />
+            </div>
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="college">College</label>
-          <input type="text" id="col" name="college" />
+        <div class="edu-block">
+          <div class="level-header">
+            <span class="icon">🎒</span> ELEMENTARY LEVEL
+          </div>
+          <div class="row">
+            <div class="form-group flex-2">
+              <label>NAME OF INSTITUTION</label>
+              <input type="text" placeholder="Elementary School Name" />
+            </div>
+            <div class="field-row flex-1">
+              <label>YEAR ENDED</label>
+              <input type="text" placeholder="YYYY" />
+            </div>
+          </div>
         </div>
 
-        <div class="form-group">
-          <label for="skills">Skills</label>
-          <input type="text" id="skills" name="skills" />
+        <div class="section-label">SKILLS & CERTIFICATIONS</div>
+        <div class="skills-card">
+          <div class="form-group full-width">
+            <label class="dark-label">PROFESSIONAL SKILLS</label>
+            <textarea
+              placeholder="e.g. Project Management, Graphic Design, Public Speaking..."
+            ></textarea>
+          </div>
+
+          <div class="form-group full-width">
+            <label class="dark-label">KEY CERTIFICATIONS</label>
+            <div class="cert-item">
+              <div class="cert-info">
+                <span class="cert-badge">✔</span>
+                <div>
+                  <strong>Certification Name</strong><br />
+                  <small>Issuing Organization • Date</small>
+                </div>
+              </div>
+              <button type="button" class="btn-add">+</button>
+            </div>
+          </div>
         </div>
 
-        <button type="button" class="next-button">Next</button>
+        <div class="actions">
+          <button type="submit" class="btn-save">Save Progress</button>
+          <button type="button" class="btn-cancel">Cancel</button>
+        </div>
       </form>
     </div>
   </body>

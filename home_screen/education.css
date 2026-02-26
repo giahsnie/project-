@@ -1,54 +1,276 @@
-.body {
+:root {
+  --bg-color: #e5e0d3;
+  --card-pink: #ddbab7;
+  --text-maroon: #631d1d;
+  --input-bg: #f2f0e9;
+  --label-color: #8c6a5e;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: "inter", sans-serif;
   margin: 0;
-  background: #685530;
   display: flex;
   justify-content: center;
+  color: #333;
 }
 
-.form-card {
-  background-color: #d6afaf;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  padding: 10px;
-  max-width: 300px;
+.container {
   width: 100%;
-  margin: 20px;
+  max-width: 300px;
+  padding: 20px;
+  border: 1px solid red;
 }
 
-.form-card h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  text-align: center;
+.intro {
+  margin-top: 25px;
+  padding-bottom: 15px;
+  font-family: "Inter", sans-serif;
 }
 
-.form-group {
+.section-label {
+  font-size: 15px;
+  font-weight: bold;
+  color: var(--label-color);
   margin-bottom: 10px;
+}
+
+.level-header {
+  font-size: 10px;
+  font-weight: bold;
+  color: var(--label-color);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.field-row label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: black;
+}
+
+.field-row input {
+  background-color: var(--input-bg);
+  border-radius: 12px;
+  padding: 12px;
+  width: 90%;
+  margin-bottom: 10px;
+  justify-content: center;
+  display: flex;
+  transform: translate(-5%);
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: black;
+}
+
+.form-field select {
+  background-color: var(--input-bg);
+  border-radius: 12px;
+  padding: 12px;
+  width: 160%;
+  margin-bottom: 10px;
+  gap: 16px;
+}
+
+.form-item input {
+  background-color: var(--input-bg);
+  border-radius: 12px;
+  padding: 12px;
+  width: 90%;
+  margin-bottom: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: black;
+}
+
+.form-group select {
+  background-color: var(--input-bg);
+  border-radius: 12px;
+  padding: 12px;
+  width: 150%;
+  margin-bottom: 10px;
+  gap: 16px;
+}
+
+.form-group input {
+  background-color: var(--input-bg);
+  border-radius: 12px;
+  padding: 12px;
+  width: 110%;
+  margin-bottom: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.form-group textarea {
+  background-color: var(--input-bg);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-family: inherit;
+  resize: none;
+  height: 60px;
 }
 
 .form-group label {
   display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: black;
+}
+
+.field-group input {
+  background-color: var(--input-bg);
+  border-radius: 12px;
+  padding: 12px;
+  width: 50%;
+  margin-bottom: 10px;
+  transform: translate(60px);
+  display: flex;
+}
+
+.field-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 13px;
+  color: black;
+  transform: translate(60px);
+}
+
+.edu-block {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.edu-block:last-of-type {
+  border-bottom: none;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+  max-width: 100%;
+}
+
+.form-group flex-1 {
+  flex: 1;
+}
+
+.form-group flex-1 input {
+  width: 100%;
+}
+
+.form-group flex-2 {
+  flex: 2;
+}
+
+.skills-card {
+  background-color: var(--card-pink);
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.skills-card textarea {
+  background-color: var(--input-bg);
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  font-family: inherit;
+  resize: none;
+  height: 60px;
+  width: 90%;
+}
+
+.dark-label {
+  color: #333;
+  font-size: 12px;
   font-weight: bold;
+  display: block;
   margin-bottom: 5px;
 }
 
-.form-group input {
-  width: 90%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+.cert-item {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.next-button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  background-color: #9d4242;
-  color: #fff;
+.cert-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+}
+
+.cert-badge {
+  background-color: var(--text-maroon);
+  color: white;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.btn-add {
+  background-color: var(--text-maroon);
+  color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 16px;
   cursor: pointer;
 }
 
-.next-button:hover {
-  background-color: #b85656;
+/* Buttons */
+.actions {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.btn-save {
+  background-color: var(--text-maroon);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-cancel {
+  background-color: transparent;
+  color: var(--text-maroon);
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
 }
