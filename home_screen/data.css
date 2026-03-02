@@ -166,6 +166,23 @@ header {
   color: var(--label-color);
 }
 
+.item-group input {
+  background-color: var(--input-bg);
+  border-radius: 12px;
+  padding: 11px;
+  width: 50%;
+  margin-bottom: 10px;
+  justify-content: center;
+  display: flex;
+}
+
+.item-group label {
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--label-color);
+}
+
 .form-item input {
   background-color: var(--input-bg);
   border-radius: 12px;
@@ -174,6 +191,24 @@ header {
   margin-bottom: 10px;
   transform: translate(-5px);
   display: flex;
+}
+
+.flex-group input {
+  background-color: var(--input-bg);
+  border-radius: 11px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  transform: translate(-10%);
+}
+
+.flex-group label {
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: left;
+  color: var(--label-color);
 }
 
 input::placeholder {
@@ -213,6 +248,7 @@ input::placeholder {
 .card-label {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 0;
+  padding-top: 15px;
 }
 
 /* Buttons */
