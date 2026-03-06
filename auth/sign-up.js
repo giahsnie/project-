@@ -16,7 +16,7 @@ document.getElementById("password").addEventListener("input", function () {
   const errorMessage = document.getElementById("errorMessage");
   if (password.length < 8) {
     errorMessage.textContent = "Password must be at least 8 characters long.";
-  } else if (password === password) {
+  } else if (!/[A-Z]/.test(password)) {
     errorMessage.textContent =
       "Password must contain at least one uppercase letter.";
   } else {
@@ -29,9 +29,11 @@ document
     const password = document.getElementById("password").value.trim();
     const confirmPassword = this.value.trim();
     const errorConfirmMessage = document.getElementById("errorConfirmMessage");
+
     if (password !== confirmPassword) {
       errorConfirmMessage.textContent = "Passwords do not match.";
     } else {
-      errorMessage.textContent = "";
+      // FIX: Changed 'errorMessage' to 'errorConfirmMessage'
+      errorConfirmMessage.textContent = "";
     }
   });
